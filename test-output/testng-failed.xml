@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [MercuryFlight_testng]">
+  <test name="Book a Flight test chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Test.BookFlight_Local">
+        <methods>
+          <include name="Register"/>
+          <include name="CreateFlight"/>
+          <include name="SignIn"/>
+          <include name="CloseBrowser"/>
+        </methods>
+      </class> <!-- Test.BookFlight_Local -->
+    </classes>
+  </test> <!-- Book a Flight test chrome(failed) -->
+  <test name="Book a Flight test iexplore(failed)">
+    <parameter name="browser" value="iexplore"/>
+    <classes>
+      <class name="Test.BookFlight_Local">
+        <methods>
+          <include name="Register"/>
+          <include name="SignOff"/>
+          <include name="CreateFlight"/>
+          <include name="SignIn"/>
+          <include name="CloseBrowser"/>
+        </methods>
+      </class> <!-- Test.BookFlight_Local -->
+    </classes>
+  </test> <!-- Book a Flight test iexplore(failed) -->
+</suite> <!-- Failed suite [MercuryFlight_testng] -->
